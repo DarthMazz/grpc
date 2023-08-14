@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package imaging;
+
+service Imaging {
+  rpc GrayScale (GrayScaleRequest) returns (GrayScaleResponse) {}
+}
+
+message GrayScaleRequest {
+  string name = 1;
+}
+
+message GrayScaleResponse {
+  bytes buffer = 1;
+}

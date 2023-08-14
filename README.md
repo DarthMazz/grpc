@@ -11,6 +11,8 @@ Package       Version
 grpcio        1.57.0
 grpcio-tools  1.57.0
 line-profiler 4.0.3
+numpy         1.25.2
+opencv-python 4.8.0.76
 pip           23.2.1
 protobuf      4.24.0
 setuptools    65.5.0
@@ -19,13 +21,28 @@ setuptools    65.5.0
 - gRPC
 
 ```bash
-pip install grpcio grpcio-tools
+% pip install grpcio grpcio-tools
 ```
 
 - line_profiler
 
 ```bash
-pip install line_profiler
+% pip install line_profiler
+```
+
+- imaging
+
+```bash
+% brew install opencv
+% pip install opencv-python
+```
+
+## 設定
+
+- imaging
+
+```bash
+% python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. ./api/imaging.proto
 ```
 
 ## 実行
