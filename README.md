@@ -1,4 +1,56 @@
-##　参考
+## 環境
+
+- python
+
+```bash
+% python --version
+Python 3.11.4
+% pip list
+Package       Version
+------------- -------
+grpcio        1.57.0
+grpcio-tools  1.57.0
+line-profiler 4.0.3
+pip           23.2.1
+protobuf      4.24.0
+setuptools    65.5.0
+```
+
+- gRPC
+
+```bash
+pip install grpcio grpcio-tools
+```
+
+- line_profiler
+
+```bash
+pip install line_profiler
+```
+
+## 実行
+
+- response_bytes
+
+```bash
+% python server.py
+```
+
+```bash
+% kernprof -l -v ./client.py
+```
+
+- tohoho
+
+```bash
+python server.py
+```
+
+```bash
+python clinet.py
+```
+
+## 参考
 
 ### tohoho
 

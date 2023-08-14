@@ -7,7 +7,7 @@ def run():
     with grpc.insecure_channel("localhost:8000") as channel:
         stub = hello_pb2_grpc.HelloWorldStub(channel)
         response = stub.SayHello(hello_pb2.HelloRequest(name="Yamada"))
-    print("RECV:" % response.message)
+    print("RECV: %s" % response.message)
 
 
 if __name__ == "__main__":
