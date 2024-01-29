@@ -69,6 +69,10 @@ python clinet.py
 
 ## 参考
 
+### さくらのナレッジ
+
+- [サービス間通信のための新技術「gRPC」入門](https://knowledge.sakura.ad.jp/24059/)
+
 ### tohoho
 
 - [とほほの gRPC 入門](https://www.tohoho-web.com/ex/grpc.html)
